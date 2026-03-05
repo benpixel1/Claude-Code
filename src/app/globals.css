@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+/*
+ * ============================================
+ * SOLEA DESIGN SYSTEM
+ * ============================================
+ * A warm, elegant design system inspired by
+ * Mediterranean warmth and flamenco artistry.
+ *
+ * Color Palette:
+ *   - Terracotta (primary): warm orange-reds
+ *   - Sand (secondary): soft golden tones
+ *   - Olive (accent): earthy greens
+ *   - Slate: cool neutrals for text/backgrounds
+ * ============================================
+ */
+
+:root {
+  /* Primary - Terracotta */
+  --solea-primary-50: #fef3f0;
+  --solea-primary-100: #fde3db;
+  --solea-primary-200: #fcc8b8;
+  --solea-primary-300: #f9a187;
+  --solea-primary-400: #f47352;
+  --solea-primary-500: #e85d3a;
+  --solea-primary-600: #d44425;
+  --solea-primary-700: #b2351c;
+  --solea-primary-800: #932f1c;
+  --solea-primary-900: #7a2b1d;
+
+  /* Secondary - Sand */
+  --solea-secondary-50: #fdf9f0;
+  --solea-secondary-100: #faf0d8;
+  --solea-secondary-200: #f4deb0;
+  --solea-secondary-300: #edc97e;
+  --solea-secondary-400: #e5ae4e;
+  --solea-secondary-500: #dc9633;
+  --solea-secondary-600: #c47a28;
+  --solea-secondary-700: #a35d23;
+  --solea-secondary-800: #854b22;
+  --solea-secondary-900: #6e3e1f;
+
+  /* Accent - Olive */
+  --solea-accent-50: #f5f7f0;
+  --solea-accent-100: #e8eddc;
+  --solea-accent-200: #d2dcbc;
+  --solea-accent-300: #b4c493;
+  --solea-accent-400: #98ac6f;
+  --solea-accent-500: #7d9252;
+  --solea-accent-600: #62743f;
+  --solea-accent-700: #4c5a34;
+  --solea-accent-800: #3f492d;
+  --solea-accent-900: #363f29;
+
+  /* Neutrals - Slate */
+  --solea-slate-50: #f8f9fa;
+  --solea-slate-100: #f1f3f5;
+  --solea-slate-200: #e9ecef;
+  --solea-slate-300: #dee2e6;
+  --solea-slate-400: #adb5bd;
+  --solea-slate-500: #868e96;
+  --solea-slate-600: #495057;
+  --solea-slate-700: #343a40;
+  --solea-slate-800: #212529;
+  --solea-slate-900: #141618;
+
+  /* Semantic */
+  --solea-success: #4caf68;
+  --solea-warning: #e5ae4e;
+  --solea-error: #e05252;
+  --solea-info: #5b9bd5;
+
+  /* Layout */
+  --solea-sidebar-width: 260px;
+  --solea-header-height: 64px;
+
+  /* Shadows */
+  --solea-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --solea-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --solea-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+
+  /* Radius */
+  --solea-radius-sm: 6px;
+  --solea-radius-md: 10px;
+  --solea-radius-lg: 16px;
+
+  --background: #f8f9fa;
+  --foreground: #212529;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: "SF Mono", "Fira Code", "Consolas", monospace;
+
+  --color-solea-primary-50: var(--solea-primary-50);
+  --color-solea-primary-100: var(--solea-primary-100);
+  --color-solea-primary-200: var(--solea-primary-200);
+  --color-solea-primary-300: var(--solea-primary-300);
+  --color-solea-primary-400: var(--solea-primary-400);
+  --color-solea-primary-500: var(--solea-primary-500);
+  --color-solea-primary-600: var(--solea-primary-600);
+  --color-solea-primary-700: var(--solea-primary-700);
+  --color-solea-primary-800: var(--solea-primary-800);
+  --color-solea-primary-900: var(--solea-primary-900);
+
+  --color-solea-secondary-50: var(--solea-secondary-50);
+  --color-solea-secondary-100: var(--solea-secondary-100);
+  --color-solea-secondary-200: var(--solea-secondary-200);
+  --color-solea-secondary-300: var(--solea-secondary-300);
+  --color-solea-secondary-400: var(--solea-secondary-400);
+  --color-solea-secondary-500: var(--solea-secondary-500);
+  --color-solea-secondary-600: var(--solea-secondary-600);
+  --color-solea-secondary-700: var(--solea-secondary-700);
+  --color-solea-secondary-800: var(--solea-secondary-800);
+  --color-solea-secondary-900: var(--solea-secondary-900);
+
+  --color-solea-accent-50: var(--solea-accent-50);
+  --color-solea-accent-100: var(--solea-accent-100);
+  --color-solea-accent-200: var(--solea-accent-200);
+  --color-solea-accent-300: var(--solea-accent-300);
+  --color-solea-accent-400: var(--solea-accent-400);
+  --color-solea-accent-500: var(--solea-accent-500);
+  --color-solea-accent-600: var(--solea-accent-600);
+  --color-solea-accent-700: var(--solea-accent-700);
+  --color-solea-accent-800: var(--solea-accent-800);
+  --color-solea-accent-900: var(--solea-accent-900);
+
+  --color-solea-slate-50: var(--solea-slate-50);
+  --color-solea-slate-100: var(--solea-slate-100);
+  --color-solea-slate-200: var(--solea-slate-200);
+  --color-solea-slate-300: var(--solea-slate-300);
+  --color-solea-slate-400: var(--solea-slate-400);
+  --color-solea-slate-500: var(--solea-slate-500);
+  --color-solea-slate-600: var(--solea-slate-600);
+  --color-solea-slate-700: var(--solea-slate-700);
+  --color-solea-slate-800: var(--solea-slate-800);
+  --color-solea-slate-900: var(--solea-slate-900);
+
+  --color-solea-success: var(--solea-success);
+  --color-solea-warning: var(--solea-warning);
+  --color-solea-error: var(--solea-error);
+  --color-solea-info: var(--solea-info);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--solea-slate-300);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--solea-slate-400);
+}
